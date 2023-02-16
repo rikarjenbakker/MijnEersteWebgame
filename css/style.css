@@ -1,0 +1,164 @@
+html {
+  background-color: rgb(138, 190, 175);
+  color: rgb(50, 50, 50);
+  font-family: "monaco", monospace;
+  font-size: 130%;
+}
+/*--------------------------------------------*/
+
+.titlegame {
+  text-align: center;
+
+}
+
+.maingame {
+  background-color: red;
+  padding: 0%;
+  margin: auto;
+  text-align: center;
+  display: block;
+  height: 80vh;
+  width: 75%;
+}
+
+.game {
+  display: inline;
+  text-align: center;
+  background-color: rebeccapurple;
+}
+
+
+.playarea {
+  text-align: center;
+  background-color: blueviolet;
+  width: 98%;
+  height: 85%;
+  padding: 1%;
+  display: grid;
+  gap: 0px;
+  align-content: center;
+  justify-content: center;
+}
+
+.blocks {
+  display: grid;
+  grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+  gap: 0px;
+  background-color: #646464;
+  text-align: center;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.block {
+  width: 50px;
+  height: 50px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.block img{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+/* menu */
+
+.menuarea {
+ display: grid;
+ grid-template-columns: auto auto auto;
+ grid-template-rows: auto;
+ align-content: center;
+ text-align: center;
+ background-color: blue;
+ height: 15%;
+ width: 100%;
+}
+
+.mines {
+
+}
+
+.mines img{
+  height: 100%;
+}
+
+.live {
+
+}
+
+.live img{
+  height: 100%;
+}
+
+.timer {
+
+}
+
+.timer img{
+  height: 100%;
+}
+
+@media only screen and (max-width: 1350px){
+  
+  html {
+    font-size: 130%;
+  }
+
+  .block {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media only screen and (max-width: 1150px){
+  
+  html {
+    font-size: 115%;
+  }
+
+  .block {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media only screen and (max-width: 950px){
+  
+  html {
+    font-size: 115%;
+  }
+
+  .block {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 750px){
+
+  html {
+    font-size: 100%;
+  }
+
+  .block {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  
+  html{
+    font-size: 80%;
+  }
+  .block {
+    width: 15px;
+    height: 15px;
+  }
+
+}
