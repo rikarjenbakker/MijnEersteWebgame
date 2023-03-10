@@ -1,14 +1,22 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 html {
   background-color: rgb(138, 190, 175);
   color: rgb(50, 50, 50);
+  
+}
+
+body {
   font-family: "monaco", monospace;
-  font-size: 130%;
+  font-size: 16px;
 }
 /*--------------------------------------------*/
 
 .titlegame {
   text-align: center;
-
+  font-size: 2rem;
 }
 
 .maingame {
@@ -17,27 +25,32 @@ html {
   margin: auto;
   text-align: center;
   display: block;
-  height: 80vh;
+  /* height: 80vh; */
   width: 75%;
 }
 
 .game {
-  display: inline;
+  /* display: inline; */
   text-align: center;
   background-color: rebeccapurple;
+  height: 100%;
 }
 
 
 .playarea {
   text-align: center;
   background-color: blueviolet;
-  width: 98%;
-  height: 85%;
-  padding: 1%;
+  /* width: 98%; */
+  height: 100%;
+  padding: 3rem 0rem;
   display: grid;
   gap: 0px;
   align-content: center;
   justify-content: center;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #646464;
+  border-top: none;
 }
 
 .blocks {
@@ -69,22 +82,58 @@ html {
 /* menu */
 
 .menuarea {
- display: grid;
- grid-template-columns: auto auto auto;
+ /* display: grid;
+ grid-template-columns: repeat(2, auto) 70px auto 70px;
  grid-template-rows: auto;
  align-content: center;
- text-align: center;
- background-color: blue;
- height: 15%;
+ align-items: center;
+ text-align: center; */
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0px 1rem;
+ background-color: #ccbce4;
+ height: 75px;
  width: 100%;
+ border-style: solid;
+ border-width: 5px;
+ border-color: #646464;
+}
+
+.menu-img {
+  width: 48px !important;
+  height: 48px !important;
+}
+
+.mines__mines-left, .time-played {
+  font-family: "monaco", monospace;
+  font-size: 2rem
+}
+
+.game-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.timer-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .mines {
-
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 .mines img{
-  height: 100%;
+  height: 60px;
+  vertical-align: middle;
 }
 
 .live {
@@ -92,7 +141,8 @@ html {
 }
 
 .live img{
-  height: 100%;
+  height: 60px;
+  vertical-align: middle;
 }
 
 .timer {
@@ -100,8 +150,34 @@ html {
 }
 
 .timer img{
-  height: 100%;
+  height: 60px;
+  vertical-align: middle;
 }
+
+.restart {
+
+}
+
+.restart img{
+  height: 60px;
+  vertical-align: middle;
+}
+
+.t00 {
+  justify-self: right;
+  float: right;
+  display: inline;
+}
+
+.t0, .t-, .t1, .t2 {
+  float: right;
+  color: red;
+  display: flex;
+  justify-self: right;
+  
+}
+
+
 
 @media only screen and (max-width: 1350px){
   
@@ -125,6 +201,19 @@ html {
     width: 35px;
     height: 35px;
   }
+  .mines img{
+    height: 90%;
+  }
+  .live img{
+    height: 90%;
+  }
+  .timer img{
+    height: 
+    90%;
+  }
+  .restart img{
+    height: 90%;
+  }
 }
 
 @media only screen and (max-width: 950px){
@@ -136,6 +225,18 @@ html {
   .block {
     width: 30px;
     height: 30px;
+  }
+  .mines img{
+    height: 80%;
+  }
+  .live img{
+    height: 80%;
+  }
+  .timer img{
+    height: 80%;
+  }
+  .restart img{
+    height: 80%;
   }
 }
 
@@ -149,6 +250,18 @@ html {
     width: 25px;
     height: 25px;
   }
+  .mines img{
+    height: 70%;
+  }
+  .live img{
+    height: 70%;
+  }
+  .timer img{
+    height: 70%;
+  }
+  .restart img{
+    height: 70%;
+  }
 }
 
 @media only screen and (max-width: 400px){
@@ -159,6 +272,19 @@ html {
   .block {
     width: 15px;
     height: 15px;
+  }
+
+  .mines img{
+    height: 50%;
+  }
+  .live img{
+    height: 50%;
+  }
+  .timer img{
+    height: 50%;
+  }
+  .restart img{
+    height: 50%;
   }
 
 }

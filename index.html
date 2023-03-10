@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="css/style.css">
-
-  <script src="js/main.js"></script>
+  <link rel="icon" href="/img/mine.png">
 
   <title>Mijn Eerste Webgame</title>
 </head>
@@ -15,125 +14,144 @@
   <h2 class="titlegame">MineSweeper</h2>
   <main class="maingame">
     <div class="game">
+
       <div class="menuarea">
-        <div class="mines"><img src="img/flag.png" alt=""></div>
-        <div class="live"><img src="/img/happy.png" alt="happy"></div>
-        <div class="timer"><img src="img/timer.png" alt=""></div>
+        <div class="mines">
+          <img src="img/flag.png" alt="Flag" class="menu-img">
+          <span id="number-of-mines-left" class="mines__mines-left">0</span>
+        </div>
+
+        <div class="game-info">
+          <div class="live"><img src="/img/happy.png" alt="Happy" class="menu-img"></div>
+          <div class="timer-info">
+              <span id="time-played" class="time-played">0:00</span>
+              <img src="img/timer.gif" alt="Timer" class="menu-img">
+          </div>
+        </div>
+
+        <div class="restart">
+          <img src="img/restart.png" alt="restart" class="menu-img">
+        </div>      
       </div>
       <div class="playarea">
         <div class="blocks">
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>     <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>     <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>    <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
-          <div class="block"><img src="img/0.png"></div>
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div>     
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div>    
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div>  
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div>
+          <div class="block"><img src="img/0.png"></div> 
+          <div class="block"><img src="img/0.png"></div> 
           <div class="block"><img src="img/0.png"></div>
         </div>
       </div>
     </div>
   </main>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
