@@ -9,21 +9,23 @@ while (aantalmijnen > 0){
 function placemines() {
   var rn = Math.floor(Math.random() * 113);
 
-  if (onclick){
-    document.getElementById(rn).onclick = "mine(this)";
-  } 
+  // document.getElementById(rn).onclick = "mine()";
+  // // if (onclick){
+  // // } 
+  alert("ik werk " + rn);
 
-  if ('DOMContentLoaded', () => document.getElementById(rn).src == "img/flag.png"){
-    document.getElementById(rn).src = "img/mine.png";
+  if (document.getElementById(rn).src == "img/flag.png"){
+    onclick = function() {mine()};
   }
 
-  alert("ik werk " + rn);
+  // 'DOMContentLoaded', () => 
+
 
 }
 alert("Er zijn 10 mijnen geplaatst");
 
 function mine(nee){
-  document.getElementById(nee.id).src = "img/mine.png";
+  document.getElementById(rn).src = "img/mine.png";
 }
 
 function vlag(ja){
